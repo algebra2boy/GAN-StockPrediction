@@ -121,3 +121,5 @@ preprocessed_data = preprocess_stock_data(data)
 #print number of columns and rows
 print(preprocessed_data.shape)
 preprocessed_data.to_csv("preprocessed_stock_data.csv")
+# Name the index column "Date"
+preprocessed_data.index.name = "Date"
